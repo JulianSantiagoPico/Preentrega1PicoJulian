@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora promedio</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../assets/icone-de-la-calculatrice-noir.ico" type="image/x-icon">
 </head>
 <body>
     <div class="col">
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
+                    <img src="../assets/icone-de-la-calculatrice-noir-2.png" alt="">
                   <a class="navbar-brand" href="#"><h4>Calculadora de promedio</h4></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -27,8 +29,60 @@
             </nav>
         </header>
     
-        <main class="mt-5 row col-6 mx-5 px-3">
-            <button type="button" id="btnPrincipal" class="btn btn-primary">Comenzar</button>
+        <main class="mt-5 row mx-5 px-3 mb-5">
+            <div>
+                <h1 class="fs-3 container text-center mb-3"> 
+                    Si necesitas calcular tu promedio de notas ingresa los valores en los campos de texto abajo.
+                </h1>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 col ms-5">
+                    <form>
+                        <div class="mb-3">
+                          <label for="mate" class="form-label">Matemáticas</label>
+                          <input type="number" class="form-control" id="mate">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inglés" class="form-label">Inglés</label>
+                            <input type="number" class="form-control" id="inglés">
+                        </div>
+                        <div class="mb-3">
+                            <label for="sociales" class="form-label">Sociales</label>
+                            <input type="number" class="form-control" id="sociales">
+                        </div>
+                        <div class="mb-3">
+                            <label for="español" class="form-label">Español / Lenguaje</label>
+                            <input type="number" class="form-control" id="español">
+                        </div>
+                        <div class="text-center">
+                            <button type="button" id="calcular" class="btn btn-primary my-1 mx-1 mb-3">Enviar</button>
+                            <button type="reset" class="btn btn-danger my-1 mx-1 mb-3">Limpiar</button>
+                        </div>
+                        
+                    </form>
+                </div>
+    
+                <div id="resultado" class="col-md-4 col mx-4 py-5 my-4 container"></div>
+
+                <div>
+                    <h1 class="fs-3 container text-center mb-3"> 
+                        ¿Quieres guardar tu nombre?, escribelo aqui abajo.
+                    </h1>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 col ms-5">
+                        <form>
+                            <div class="mb-3">
+                              <label for="nombre" class="form-label">Tu nombre</label>
+                              <input type="text" class="form-control" id="nombre">
+                            </div>
+                            <div class="text-center">
+                                <button type="button" id="guardar" class="btn btn-success my-1 mx-1">Guardar nombre</button>
+                                <button type="button" id="cargar" class="btn btn-secondary my-1">Cargar tu nombre</button>
+                            </div>
+            </div>
         </main>
     
         <footer class="footer container-fluid mt-5 bg-dark">
