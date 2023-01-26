@@ -19,8 +19,8 @@ const recuperarDatos = () => {
     console.log("Datos Recuperados!");
 };
 
-const materias = { area1: "matematicas", area2: "inglés", area3: "sociales", area4: "español" };
 const areas = ["matematicas", "inglés", "sociales", "español", "recreo"];
+const materias = [];
 
 document.getElementById("calcular").addEventListener("click", calculadora);
 document.getElementById("guardar").addEventListener("click", guardarDatos);
@@ -38,6 +38,7 @@ function calculadora () {
     console.log(promedio_notaFinal);
     let salidaNota = `<p>Tu promedio es: <b>${promedio_notaFinal}</b></p>`;
     document.getElementById("resultado").innerHTML = salidaNota;
+    
  };
 
 const eliminarArea = (area) => {
@@ -52,4 +53,5 @@ const eliminarArea = (area) => {
 eliminarArea("recreo");
 console.log(areas);
 
+console.log(areas.length)
 
