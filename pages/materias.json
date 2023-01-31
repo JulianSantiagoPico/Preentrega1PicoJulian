@@ -1,0 +1,10 @@
+[
+    { "Materia1": "Geografía", "id": 1 },  
+    { "Materia2": "Educación física", "id": 2 },
+    { "Materia3": "Biología", "id": 3 },
+    { "Materia4": "Ciencias naturales", "id": 4 },
+    { "Materia5": "Historia", "id": 5 },
+    { "Materia6": "Tecnología", "id": 6 },
+    { "Materia7": "Artes", "id": 7 },
+    { "Materia8": "Ética", "id": 8 }
+]
